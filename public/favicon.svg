@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  
+  <!-- Dark charcoal top -->
+  <path d="M 60 50 L 120 50 L 130 60 L 70 60 Z" fill="#3d3d3d"/>
+  
+  <!-- Slate blue/steel gray left -->
+  <path d="M 70 70 L 120 70 L 120 90 L 70 90 Q 60 80 70 70 Z" fill="#6b8195"/>
+  
+  <!-- Dark brown/charcoal center -->
+  <path d="M 80 95 L 110 95 L 110 110 L 80 110 Z" fill="#3d3d3d"/>
+  
+  <!-- Warm bronze/tan right -->
+  <path d="M 100 115 L 140 115 L 140 140 Q 120 145 100 135 Z" fill="#a68860"/>
+  
+  <!-- Bronze bottom -->
+  <path d="M 110 140 L 130 140 L 130 160 L 110 160 Z" fill="#a68860"/>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "eventology",
+  "compatibility_date": "2026-07-26",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "dist/server.js",
+  "env": {
+    "production": {
+      "route": "*"
+    }
+  },
+  "build": {
+    "command": "bun run build",
+    "cwd": ".",
+    "watch_paths": ["src/**/*.ts", "src/**/*.tsx"]
+  },
+  "observability": {
+    "enabled": true
+  }
+}

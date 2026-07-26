@@ -1,0 +1,235 @@
+{
+  "vmg": {
+    "vision": {
+      "label": "Vision",
+      "title": "The trusted force behind seamlessly executed events.",
+      "body": "To be the trusted force behind seamlessly executed events, where structure, clarity, and disciplined execution turn ideas into reliable outcomes."
+    },
+    "mission": {
+      "label": "Mission",
+      "title": "Every detail, our responsibility.",
+      "body": "We plan, design, and execute events as a unified operation, taking full responsibility for every detail to ensure each event is delivered exactly as intended."
+    },
+    "goal": {
+      "label": "Goal",
+      "title": "Complexity removed, reliability delivered.",
+      "body": "Our goal is to remove complexity from event execution by delivering controlled, coordinated, and dependable event experiences."
+    }
+  },
+  "chapters": {
+    "who": {
+      "label": "Who We Are",
+      "body": "Eventology is a discipline-first event operations studio. We exist to turn event execution from a source of risk into a formality — an outcome you can count on before the first invitation[...]"
+    },
+    "what": {
+      "label": "What We Do",
+      "body": "We handle every layer of the event: planning, design, on-site supervision, hospitality, technical production, and visual identity — under a single accountable operation."
+    },
+    "how": {
+      "label": "How We Do It",
+      "body": "Our scope is not limited to predefined services. We adapt to each event's needs, sourcing and coordinating any required solution to achieve the intended outcome."
+    },
+    "why": {
+      "label": "Why Choose Us",
+      "body": "Because a successful event is not just something that happened — it's something delivered exactly as intended. That standard, and the operational discipline behind it, is our biggest stre[...]"
+    }
+  },
+  "sections": {
+    "whoWeAre": {
+      "eyebrow": "Who We Are",
+      "heading": "A studio built around one idea: an event delivered exactly as intended."
+    },
+    "whatWeHandle": {
+      "eyebrow": "What We Handle",
+      "heading": "Six disciplines.",
+      "headingHighlight": "One operation."
+    },
+    "selectedEvents": {
+      "eyebrow": "Selected Events",
+      "heading": "Executed,",
+      "headingHighlight": "not improvised."
+    },
+    "guidingPrinciples": "Guiding Principles",
+    "clients": "Clients",
+    "clientsHeading": "What our partners say when the lights come up.",
+    "faq": "FAQ",
+    "faqHeading": "Straight answers before we start.",
+    "letsTalk": "Let's Talk",
+    "buildingHeading": "Tell us what you're",
+    "buildingHighlight": "building.",
+    "buildingSubheading": "We'll handle how."
+  },
+  "services": {
+    "planning": {
+      "title": "Event Planning & Management",
+      "body": "From concept to execution, comprehensive solutions for conferences, meetings, and events across corporate and private clients."
+    },
+    "supervision": {
+      "title": "On-Site Supervision & Execution",
+      "body": "Precise on-site oversight ensuring smooth event flow and the highest quality across every detail on the day of the event."
+    },
+    "equipment": {
+      "title": "Equipment & Décor",
+      "body": "Table and seating setups, floral arrangements, and furniture selection aligned with the event's identity."
+    },
+    "hospitality": {
+      "title": "Hospitality & Catering",
+      "body": "Premium buffets, beverages, professional serving, and a trained hospitality team for an exceptional guest experience."
+    },
+    "technical": {
+      "title": "Technical & Visual Production",
+      "body": "Advanced sound and lighting, display screens, photography and video equipment, and full media coverage."
+    },
+    "visual": {
+      "title": "Visual Identity & Design",
+      "body": "Invitations, advertisements, and visual systems that reflect the character of the event and the organizing brand."
+    }
+  },
+  "works": {
+    "sovereignGala": {
+      "name": "Sovereign Gala",
+      "type": "Corporate Gala",
+      "year": "2025"
+    },
+    "meridianLaunch": {
+      "name": "Meridian Launch",
+      "type": "Product Launch",
+      "year": "2025"
+    },
+    "villaCascadia": {
+      "name": "Villa Cascadia",
+      "type": "Private Wedding",
+      "year": "2024"
+    },
+    "horizonSummit": {
+      "name": "Horizon Summit",
+      "type": "Conference",
+      "year": "2024"
+    },
+    "silentObjects": {
+      "name": "Silent Objects",
+      "type": "Exhibition Opening",
+      "year": "2024"
+    },
+    "studioNoir": {
+      "name": "Studio Noir SS26",
+      "type": "Runway Show",
+      "year": "2024"
+    }
+  },
+  "stats": {
+    "events": {
+      "n": 240,
+      "suffix": "+",
+      "label": "Events delivered"
+    },
+    "years": {
+      "n": 12,
+      "suffix": "+",
+      "label": "Years operating"
+    },
+    "execution": {
+      "n": 98,
+      "suffix": "%",
+      "label": "On-time execution"
+    },
+    "vendors": {
+      "n": 320,
+      "suffix": "+",
+      "label": "Vendor network"
+    }
+  },
+  "testimonials": {
+    "marcus": {
+      "quote": "Eventology delivered with clarity. Their structured workflow and fast turnaround made our flagship summit seamless — they've become our trusted partner for every major operation.",
+      "name": "Marcus Halden",
+      "role": "Head of Communications, Meridian Group"
+    },
+    "selin": {
+      "quote": "The kind of team you stop worrying about the moment they walk into the room. Every detail was already handled — because it was actually already handled.",
+      "name": "Selin Kavas",
+      "role": "Founder, Studio Noir"
+    },
+    "rafael": {
+      "quote": "They treat execution like an engineering problem. That's exactly what a 900-guest event needs, and it's exactly what we got.",
+      "name": "Rafael Ortega",
+      "role": "Director of Events, Horizon Ventures"
+    }
+  },
+  "faqs": {
+    "eventTypes": {
+      "q": "What types of events does Eventology handle?",
+      "a": "Corporate summits, product launches, conferences, private ceremonies, brand activations, and cultural programming. If it needs to run on a schedule with zero improvisation, we handle it."
+    },
+    "fullService": {
+      "q": "Do you provide full-service execution or just planning?",
+      "a": "Full-service. Planning, design, on-site supervision, hospitality, technical production, and visual identity — one accountable operation, one point of contact."
+    },
+    "advance": {
+      "q": "How far in advance should we book?",
+      "a": "For flagship events, 8–16 weeks lead time is ideal. We regularly accept shorter runways when the operational scope allows — talk to us first, don't assume no."
+    },
+    "vendors": {
+      "q": "Can you source vendors outside your standard service list?",
+      "a": "Yes. Our scope is not limited to predefined services — we adapt to each event's needs and coordinate any required solution to achieve the intended outcome."
+    },
+    "clients": {
+      "q": "Do you work with both corporate and private clients?",
+      "a": "Both. The discipline is identical; the scale, tone, and visual language flex to match."
+    }
+  },
+  "marquee": [
+    "Corporate Galas",
+    "Product Launches",
+    "Private Ceremonies",
+    "Conferences",
+    "Exhibitions",
+    "Runway Shows",
+    "Brand Activations",
+    "Cultural Programming"
+  ],
+  "contact": {
+    "whatsapp": {
+      "label": "Fastest response",
+      "heading": "Chat on WhatsApp",
+      "description": "Get a reply during operating hours, usually within the hour.",
+      "cta": "Open WhatsApp"
+    },
+    "email": {
+      "label": "For briefs & RFPs",
+      "heading": "Email us",
+      "description": "Send a brief, deck, or a paragraph — we'll write back with next steps.",
+      "address": "info@eventology.sa"
+    }
+  },
+  "footer": {
+    "tagline": "Structure. Clarity. Execution.",
+    "navigation": "Navigate",
+    "contactSection": "Contact",
+    "links": {
+      "who": "Who We Are",
+      "services": "Services",
+      "work": "Work",
+      "contact": "Contact",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram"
+    },
+    "copyright": "© {{year}} Eventology. All rights reserved.",
+    "motto": "Event Operations, Engineered."
+  },
+  "hero": {
+    "eyebrow": "Event Operations, Engineered",
+    "title": "Structure,",
+    "titleHighlight": "Clarity",
+    "subtitle": "Disciplined Execution.",
+    "description": "We plan, design, and execute events as a unified operation — taking full responsibility for every detail so each event is delivered exactly as intended.",
+    "cta": {
+      "primary": "Start a Project",
+      "secondary": "Our Services"
+    },
+    "scroll": "Scroll"
+  },
+  "nav": {
+    "title": "Eventology"
+  }
+}

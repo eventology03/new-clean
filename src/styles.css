@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@source "../src";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-hairline: var(--hairline);
+  --color-primary: var(--foreground);
+  --color-primary-foreground: var(--background);
+  --color-ring: var(--accent);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+}
+
+:root {
+  /* Eventology brand: near-black base, warm bronze/gold accent, off-white */
+  --background: oklch(0.145 0.005 60);
+  --surface: oklch(0.185 0.006 60);
+  --surface-2: oklch(0.22 0.008 60);
+  --foreground: oklch(0.955 0.008 85);
+  --muted: oklch(0.28 0.008 60);
+  --muted-foreground: oklch(0.68 0.012 75);
+  --accent: oklch(0.74 0.12 78);
+  --accent-foreground: oklch(0.145 0.005 60);
+  --border: oklch(1 0 0 / 8%);
+  --hairline: oklch(1 0 0 / 12%);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-accent-foreground);
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+}
+
+@utility hairline-t {
+  border-top: 1px solid var(--color-hairline);
+}
+@utility hairline-b {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@utility marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes ken-burns {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.18); }
+}
+@utility ken-burns {
+  animation: ken-burns 22s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+@utility shimmer {
+  animation: shimmer 2.4s ease-in-out infinite;
+}
