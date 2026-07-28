@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
+import { useLanguage } from "@/lib/language-context";
 
-const links = [
-  { href: "#who", label: "Who We Are" },
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Work" },
-  { href: "#contact", label: "Contact" },
-];
+const hrefs = ["#who", "#services", "#work", "#contact"];
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { lang, toggleLang, t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -18,6 +15,8 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const links = hrefs.map((href, i) => ({ href, label: t.nav.links[i] }));
 
   return (
     <motion.header
@@ -41,7 +40,6 @@ export function Nav() {
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-accent shimmer" />
         </a>
-
         <nav className="hidden md:flex items-center gap-9">
           {links.map((l) => (
             <a
@@ -54,15 +52,21 @@ export function Nav() {
             </a>
           ))}
         </nav>
-
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center gap-2 text-sm px-5 py-2.5 rounded-full bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
-        >
-          Plan Your Event
-          <span aria-hidden>↗</span>
-        </a>
-
+        <div className="hidden md:flex items-center gap-4">
+          <button
+            onClick={toggleLang}
+            className="text-sm px-4 py-2 rounded-full border border-hairline hover:border-accent hover:text-accent transition-colors"
+          >
+            {lang === "en" ? "عربي" : "English"}
+          </button>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 text-sm px-5 py-2.5 rounded-full bg-foreground text-background hover:bg-accent hover:text-accent-foreground transition-colors"
+          >
+            {t.nav.cta}
+            <span aria-hidden>↗</span>
+          </a>
+        </div>
         <button
           onClick={() => setOpen((o) => !o)}
           className="md:hidden flex flex-col gap-1.5 p-2"
@@ -72,7 +76,6 @@ export function Nav() {
           <span className="w-6 h-px bg-foreground" />
         </button>
       </div>
-
       {open && (
         <div className="md:hidden hairline-t mt-3 bg-background/95 backdrop-blur-xl">
           <div className="px-6 py-6 flex flex-col gap-4">
@@ -86,12 +89,21 @@ export function Nav() {
                 {l.label}
               </a>
             ))}
+            <button
+              onClick={() => {
+                toggleLang();
+                setOpen(false);
+              }}
+              className="mt-2 inline-flex items-center justify-center px-5 py-3 border border-hairline rounded-full"
+            >
+              {lang === "en" ? "عربي" : "English"}
+            </button>
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center justify-center px-5 py-3 bg-accent text-accent-foreground rounded-full"
+              className="inline-flex items-center justify-center px-5 py-3 bg-accent text-accent-foreground rounded-full"
             >
-              Plan Your Event
+              {t.nav.cta}
             </a>
           </div>
         </div>
